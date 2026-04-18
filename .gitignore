@@ -1,0 +1,112 @@
+# ====================== Python 后端通用忽略 ======================
+# Python 字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境（最常用，必须加）
+venv/
+env/
+ENV/
+.venv/
+.env/
+env.bak/
+venv.bak/
+
+# IDE 配置文件（VS Code、PyCharm等）
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 环境变量/敏感配置
+.env
+.env.local
+.env.*.local
+config.ini
+secrets.yaml
+credentials.json
+
+# 数据库文件（如果用本地SQLite）
+*.db
+*.sqlite3
+
+# ====================== 前端项目通用忽略 ======================
+# 依赖目录
+node_modules/
+jspm_packages/
+.npm/
+.yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# 构建产物
+dist/
+build/
+*.local
+
+# 测试覆盖文件
+coverage/
+.nyc_output/
+
+# 临时文件
+*.log
+*.tmp
+.cache/
+.temp/
+
+# 编辑器/系统文件
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ====================== 你的项目专属忽略 ======================
+# 后端本地配置（如果有自定义本地配置文件）
+backend/config/local_config.py
+backend/.env
+
+# 前端本地配置
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# 大文件/临时文件
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.mp4
+*.mov
+*.avi
